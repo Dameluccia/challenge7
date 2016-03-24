@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css"/>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./css/owl.carousel.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./css/owl.theme.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./css/owl.transitions.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css" media="screen" title="no title" charset="utf-8">
     <style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: #c9bbbb}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
-    <script src="/js/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="/js/stickUp.min.js"></script>
+    <script src="./js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./js/stickUp.min.js"></script>
+    <script src="./js/owl.carousel.min.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="/js/script.js" type="text/javascript"></script>
+    <script src="./js/script.js" type="text/javascript"></script>
     <title>Challenge7</title>
 </head>
 <body>
@@ -27,7 +31,9 @@
                             <a href="http://twitter.com/" id="twitter">Twitter</a>
                             <a href="#" id="freedownload">Free Download</a>
                             <div class="flecheheader" >
-                                <img src="img/circle.png" />
+                                <a class="js-scrollTo" href="#arrow">
+                                <img src="./img/circle.png" />
+                            </a>
                             </div>
                         </div>
                     </div>
@@ -36,24 +42,17 @@
         </div>
     </header>
 
-
-
-
-
-                <nav class="navbar-default container bold navi">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-
-
-
+    <nav class="navbar-default container bold navi">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
                     <span>Flatfy</span>
                     <ul>
-                        <li><a href="#">What is?</a></li>
-                        <li><a href="#">Use it</a></li>
-                        <li><a href="#">Screenshot</a></li>
-                        <li><a href="#">Credits</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a class="js-scrollTo" href="#whatis" id="arrow"href="#">What is?</a></li>
+                        <li><a class="js-scrollTo" href="#useit">Use it</a></li>
+                        <li><a  class="js-scrollTo" href="#screenshot">Screenshot</a></li>
+                        <li><a class="js-scrollTo"  href="#credits">Credits</a></li>
+                        <li><a class="js-scrollTo" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,8 +62,8 @@
 
 
     <div class="container-fluid">
-        <section class="section1 container marginbottom">
-            <h2 class="bold margintop">What is?</h2>
+        <section class="section1 container marginbottom"id="whatis">
+            <h2 class="bold margintop" >What is?</h2>
             <p class="marginbottom">
                 A special thanks to Death.
             </p>
@@ -119,19 +118,19 @@
                 <div class="col-md-4">
                     <img src="img/browser.svg" class="rotate" alt="" />
                     <h3>Follow me</h3>
-                    <p>
+                    <p  id="useit">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna
                         aliqua. Ut enim ad minim veniam.
                     </p>
                 </div>
             </div>
-        </section>
-        <section class="section2">
+        </section >
+        <section  class="section2">
             <div class="row  marginbottom margintop">
-                    <div class="container">
+                <div class="container">
 
-                    <div class="col-md-6">
+                    <div  class="col-md-6">
                         <h3 class="bold">Full Responsive</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -144,7 +143,7 @@
                         <a href="#" class="lienbleue">Visit Website</a>
                     </div>
                     <div class="col-md-6">
-                        <img src="img/ipad.png" alt="" class="width"/>
+                        <a href="img/ipad.png"><img src="img/ipad.png" target="blank" class="width"/></a>
                     </div>
                 </div>
             </div>
@@ -152,7 +151,7 @@
         <section class="section3   container">
             <div class="row  marginbottom margintop">
                 <div class="col-md-6">
-                    <img src="img/iphone.png" class="width" alt="" />
+                    <a href="img/iphone.png"><img src="img/iphone.png" target="blank" class="width" alt="" /></a>
                 </div>
                 <div class="col-md-6">
                     <h3 class="bold">Drag Gallery</h3>
@@ -172,215 +171,214 @@
             <div class="row  marginbottom margintop">
                 <div class="container">
 
-                <div class="col-md-6">
-                    <h3 class="bold">Font Awesome & Glyphicon</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                    </p>
-                    <ul>
-                        <li><i class="fa fa-signal"></i>Reliable and Secure Platform</li>
-                        <li><i class="fa fa-refresh"></i>Everything is perfectly organized for future</li>
-                        <li><i class="fa fa-headphones"></i>Attach large file easily</li>
-                    </ul>
-                    <button type="button" name="button" class="lienvert">View Details</button>
-                    <a href="#" class="lienbleue">Visit Website</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="img/doge.png" alt="" class="img-responsive"/>
+                    <div class="col-md-6">
+                        <h3 class="bold">Font Awesome & Glyphicon</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                        </p>
+                        <ul>
+                            <li><i class="fa fa-signal"></i> Reliable and Secure Platform</li>
+                            <li><i class="fa fa-refresh"></i> Everything is perfectly organized for future</li>
+                            <li><i class="fa fa-headphones"></i> Attach large file easily</li>
+                        </ul>
+                        <button type="button" name="button" class="lienvert">View Details</button>
+                        <a href="#" class="lienbleue">Visit Website</a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="./img/doge.png"><img src="./img/doge.png"  target="blank" alt="" class="img-responsive"/></a>
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
-        <section class="section5 container">
+        <section class="section5 container"  id="screenshot">
             <h2 class="bold margintop text-center">What is?</h2>
             <p class="marginbottom text-center">
                 A special thanks to Death.
             </p>
-            <div class="row marginbottom">
-                <div class="col-md-4">
-                    <img src="img/slide/1.png" class="width" alt="" />
+            <div class="marginbottom">
+                <div id="owl-demo">
+
+                    <div class="item"><img src="./img/slide/1.png" alt="Owl Image"></div>
+                    <div class="item"><img src="./img/slide/2.png" alt="Owl Image"></div>
+                    <div class="item"><img src="./img/slide/3.png" alt="Owl Image"></div>
+                    <div class="item"><img src="./img/slide/1.png" alt="Owl Image"></div>
+                    <div class="item"><img src="./img/slide/2.png" alt="Owl Image"></div>
+                    <div class="item"><img src="./img/slide/3.png" alt="Owl Image"></div>
                 </div>
-                <div class="col-md-4">
-                    <img src="img/slide/2.png" class="width" alt="" />
-                </div>
-                <div class="col-md-4">
-                    <img src="img/slide/3.png" class="width" alt="" />
-                </div>
-            </div>
-        </section>
-        <div class="row">
-            <div class="col-md-12 divmilieu">
-                <div class="styledivmilieu">
-                    <h2 class="bold">What is?</h2>
-                    <p class="marginbottom">
-                        A special thanks to Death.
-                    </p>
-                    <a href="#" id="lienvertbis" class="lienvert">Subscribe to our Newsletter</a>
-                </div>
-            </div>
-        </div>
-        <section class="section6 container   marginbottom">
-            <h2 class="bold margintop">What is?</h2>
-            <p class="marginbottom">
-                A special thanks to Death.
-            </p>
+            </section>
             <div class="row">
-                <div class="col-md-2">
-                    <img src="img/retina.svg" class="rotate" alt="" />
-                </div>
-                <div class="col-md-4">
-                    <h3>Bootstrap</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicingd
-                        est laborum.
-                    </p>
-                </div>
-                <div class="col-md-2">
-                    <img src="img/retina.svg" class="rotate" alt="" />
-
-                </div>
-                <div class="col-md-4">
-                    <h3>Bootstrap</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicingd
-                        est laborum.
-                    </p>
+                <div class="col-md-12 divmilieu">
+                    <div class="styledivmilieu">
+                        <h2 class="bold">What is?</h2>
+                        <p class="marginbottom">
+                            A special thanks to Death.
+                        </p>
+                        <a href="#" id="lienvertbis" class="lienvert">Subscribe to our Newsletter</a>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-2">
-                    <img src="img/retina.svg" class="rotate" alt="" />
-                </div>
-                <div class="col-md-4">
-                    <h3>Bootstrap</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicingd
-                        est laborum.
-                    </p>
-                </div>
-                <div class="col-md-2">
-                    <img src="img/retina.svg" class="rotate" alt="" />
+            <section id="credits"  class="section6 container   marginbottom">
+                <h2 class="bold margintop" >Credits</h2>
+                <p class="marginbottom">
+                    A special thanks to Death.
+                </p>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="./img/retina.svg" class="rotate" alt="" />
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Bootstrap</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicingd
+                            est laborum.
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./img/retina.svg" class="rotate" alt="" />
 
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Bootstrap</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicingd
+                            est laborum.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>Bootstrap</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicingd
-                        est laborum.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="./img/retina.svg" class="rotate" alt="" />
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Bootstrap</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicingd
+                            est laborum.
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="./img/retina.svg" class="rotate" alt="" />
 
-    <div class="imgfemme">
-        <div class="divimgfemme">
-            <h2>Download Free</h2>
-            <a href="#" class="text-uppercase lienbleuefonce">Pay with a tweet</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Bootstrap</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicingd
+                            est laborum.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </div>
-    </div>
 
-    <div class="container-fluid">
-    <section class="section7">
-        <h2 class="bold margintop no-padding text-center">What is?</h2>
-        <p class="marginbottom text-center">
-            A special thanks to Death.
-        </p>
-
-        <div class="row">
-            <div class="col-md-5 col-md-offset-1">
-                  <div class="row">
-                   <div class="col-md-6 col-sm-6 col-xs-12">
-                    <form method="post">
-                     <div class="form-group ">
-                      <label class="control-label " for="name">
-                       Your Name
-                      </label>
-                      <input class="form-control" id="name" name="name" placeholder="Enter Name" type="text"/>
-                     </div>
-                     <div class="form-group ">
-                      <label class="control-label " for="email">
-                       Your Email
-                      </label>
-                      <input class="form-control" id="email" name="email" placeholder="Enter Email" type="text"/>
-                     </div>
-                     <div class="form-group ">
-                      <label class="control-label " for="message">
-                       Message
-                      </label>
-                      <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
-                     </div>
-                     <div class="form-group">
-                      <div>
-                       <button class="btn btn-primary " name="submit" type="submit">
-                        Submit
-                       </button>
-                      </div>
-                     </div>
-                    </form>
-                   </div>
-                  </div>
-            </div>
-            <div class="col-md-5 col-md-offset-1">
-                <div class="">
-                    <h3>Office Location</h3>
-                    <ul>
-                        <li>The pentagon</li>
-                        <li>Washington,DC 20301</li>
-                        <li>Phone:XXX-XXX-XXXX</li>
-                        <li>Fax : XXX-XXX-YYYY</li>
-                    </ul>
-                    <h3>Social</h3>
-                    <a href="#" class="lienawesome"><i class="fa fa-facebook-square"></i></a>
-                    <a href="#" class="lienawesome"><i class="fa fa-twitter-square"></i></a>
-                    <a href="#" class="lienawesome"><i class="fa fa-google-plus-square"></i></a>
-                    <a href="#" class="lienawesome"><i class="fa fa-flickr"></i></a>
-                </div>
+        <div class="imgfemme">
+            <div class="divimgfemme">
+                <h2>Download Free</h2>
+                <a href="#" class="text-uppercase lienbleuefonce">Pay with a tweet</a>
             </div>
         </div>
-    </section>
-    <footer>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="container">
 
-        <div class="col-md-9 footergrey">
-            <h3>Follow me</h3>
-            <p>
-                eljerjldfjkld kfjlfjf flkjf?
-            </p>
-            <p>
-                lklvov dsijls f,oilsnf ososmkf osfmjsf Theme!
-            </p>
-            <p>
-                Go to <a href="#">andreagalanti.it</a>
-            </p>
-            <p>
-                <a href="#">Flatty theme</a> by <a href="#">Andrea Galanti</a>
-                odfjidjfdlflds difkjf sflijs slj ffkj.
-                the <a href="#">Creative Commons Attribution 3.0 license - Not Commercial</a>
-            </p>
+        <div class="container-fluid">
+            <section class="section7"  id="contact">
+                <h2 class="bold margintop no-padding text-center" >Contact</h2>
+                <p class="marginbottom text-center">
+                    A special thanks to Death.
+                </p>
+
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-1">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <form method="post">
+                                    <div class="form-group ">
+                                        <label class="control-label " for="name">
+                                            Your Name
+                                        </label>
+                                        <input class="form-control" id="name" name="name" placeholder="Enter Name" type="text"/>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="control-label " for="email">
+                                            Your Email
+                                        </label>
+                                        <input class="form-control" id="email" name="email" placeholder="Enter Email" type="text"/>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="control-label " for="message">
+                                            Message
+                                        </label>
+                                        <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <button class="btn btn-primary " name="submit" type="submit">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-md-offset-1">
+                        <div class="">
+                            <h3>Office Location</h3>
+                            <ul>
+                                <li>The pentagon</li>
+                                <li>Washington,DC 20301</li>
+                                <li>Phone:XXX-XXX-XXXX</li>
+                                <li>Fax : XXX-XXX-YYYY</li>
+                            </ul>
+                            <h3>Social</h3>
+                            <a href="#" class="lienawesome"><i class="fa fa-facebook-square"></i></a>
+                            <a href="#" class="lienawesome"><i class="fa fa-twitter-square"></i></a>
+                            <a href="#" class="lienawesome"><i class="fa fa-google-plus-square"></i></a>
+                            <a href="#" class="lienawesome"><i class="fa fa-flickr"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container">
+
+                            <div class="col-md-9 footergrey">
+                                <h3>Follow me</h3>
+                                <p>
+                                    eljerjldfjkld kfjlfjf flkjf?
+                                </p>
+                                <p>
+                                    lklvov dsijls f,oilsnf ososmkf osfmjsf Theme!
+                                </p>
+                                <p>
+                                    Go to <a href="#">andreagalanti.it</a>
+                                </p>
+                                <p>
+                                    <a href="#">Flatty theme</a> by <a href="#">Andrea Galanti</a>
+                                    odfjidjfdlflds difkjf sflijs slj ffkj.
+                                    the <a href="#">Creative Commons Attribution 3.0 license - Not Commercial</a>
+                                </p>
+                            </div>
+                            <div class="col-md-3 divfooter2">
+                                <h3>Flatfy Theme</h3>
+                                <ul>
+                                    <li>12 column grid bootstrap</li>
+                                    <li>Form Contact</li>
+                                    <li>Drag Gallery</li>
+                                    <li>Full Responsive</li>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Go to : <a href="#">andregalantiLit/flatfy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </footer>
         </div>
-        <div class="col-md-3 divfooter2">
-            <h3>Flatfy Theme</h3>
-            <ul>
-                <li>12 column grid bootstrap</li>
-                <li>Form Contact</li>
-                <li>Drag Gallery</li>
-                <li>Full Responsive</li>
-                <li>Lorem Ipsum</li>
-                <li>Go to : <a href="#">andregalantiLit/flatfy</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
 
     </div>
-</footer>
-</div>
-
-</div>
 </body>
 </html>

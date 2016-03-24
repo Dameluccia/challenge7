@@ -59,7 +59,7 @@ overflow:hidden;
     color: white;
 }
 header{
-    background: url(/img/intro5.jpg) center center;
+    background: url(../img/intro5.jpg) center center;
     background-size: cover;
     height: 100%;
     text-align: center;
@@ -68,6 +68,14 @@ header{
 }
 header span{
     color:white;
+}
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .navi{
     background-color: #F8F8F8;
@@ -164,7 +172,7 @@ footer{
     width: 35em;
 }
 .imgfemme{
-    background-image: url(/img/banner-bg.jpg);
+    background-image: url(../img/banner-bg.jpg);
     background-position: center;
     text-align: center;
     height: 23em;
